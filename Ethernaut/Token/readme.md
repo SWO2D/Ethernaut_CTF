@@ -27,7 +27,7 @@ function transfer(address _to, uint _value) public returns (bool) {
 ## Attack scenario(s)
 
 
-* Attacker can simply transfer 21 tokens (which is more than 20) to make the above condition true.
+* Attacker can simply transfer 21 tokens (which is more than 20) to make the below condition true.
 
 `require(balances[msg.sender] - _value >= 0);`
 `Balance = 20 | Value = 21 ==> 20 - 21` 
