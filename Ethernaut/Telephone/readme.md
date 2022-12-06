@@ -27,6 +27,10 @@ function changeOwner(address _owner) public {
 
 * Attacker can exploit the `tx.origin` vulnerability to call the `changeOwner` function and set the owner address to their own address instead.
 
+## Attack contract
+
+`Telephone_Attack.sol`
+
 ## Recommendation
 
 In order to prevent this type of exploit, it is recommended that developers use a modifier in their contracts that checks the transaction origin address before allowing certain functions to be executed.
