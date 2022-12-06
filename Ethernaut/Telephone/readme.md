@@ -12,6 +12,7 @@
 ## Issue(s)
 
 * Using `tx.Origin` to verify ownership:
+
 This vulnerability allows the user to send transactions from an unknown or untrusted address and potentially gain unintended access to functions or data stored in the smart contract.
 
 
